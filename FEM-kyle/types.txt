@@ -1,0 +1,54 @@
+=========================================
+
+*  1/-0 === -Infinity
+* -Infinity === -Infinity
+*  Infinity === Infinity
+
+
+-0 Is Special number in javascript
+  * var zero = -0
+  * zero.toString()
+  * -0 === -0
+  * -0 === 0
+  * -0>0
+  * -0<0
+
+Check If It's theres is -0 Negative Number
+Object.is(-0,-0)
+
+// Custom Functionality to check if value is -0
+function isNegativeZero(value) {
+ return  value == 0 && 1/value === -Infinity);
+}
+
+NaN => is the only Value in javascript that is !== It Self
+isNaN(NaN);
+/*
+ Custom Functionality to check NaN
+ Because If Value is not equal to itself than 
+ Than probably it's NaN value.
+*/
+ function isNaN(value) {
+     return value !== value; 
+ }
+
+
+
+[]]+{} // "[object Object]"
+{}+[]; // 0
+Number({}) // NaN
+Number([]) // 0
+
+Number(String({})) NaN
+0+NaN // NaN
+NaN+0 // NaN
+{}+0 // 0
+0+{} //"0[object Object]"
+
+0+[] // "0"
+[]+0 // "0"
+
+String([]) // ""
+String({}) // "[object Object]"
+
+=========================================
